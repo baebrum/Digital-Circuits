@@ -1,0 +1,900 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Apr 21 21:21:27 2021
+# Process ID: 872
+# Current directory: C:/Users/Carranza/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1468
+# Log file: C:/Users/Carranza/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Carranza/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1029.398 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/LSFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/fsm_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/led_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/sevenSegDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2458] undeclared symbol w_LFSR_Done, assumed default net type wire [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:122]
+WARNING: [VRFC 10-159] /* in comment [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:149]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xelab -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_game(NUM_BITS=8)
+Compiling module xil_defaultlib.LFSR
+Compiling module xil_defaultlib.led_decoder
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sevenSegDisplay
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Apr 21 21:23:14 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 21 21:23:14 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1029.398 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1029.398 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_top/inst11/inst4/state_out}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_top/inst11/inst4/state}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_top/inst11/inst4/user_lost}} {{/tb_top/inst11/inst4/user_won}} {{/tb_top/inst11/inst4/round_finished}} {{/tb_top/inst11/inst4/timer_counter}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_top/inst11/inst4/LSFR_random_in}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_top/inst11/inst4/led_alternate}} {{/tb_top/inst11/inst4/led_alternate_counter}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_top/inst11/inst4/fsm_led}} 
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/LSFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/fsm_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/led_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/sevenSegDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2458] undeclared symbol w_LFSR_Done, assumed default net type wire [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:122]
+WARNING: [VRFC 10-159] /* in comment [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:149]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xelab -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_game(NUM_BITS=8)
+Compiling module xil_defaultlib.LFSR
+Compiling module xil_defaultlib.led_decoder
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sevenSegDisplay
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1029.398 ; gain = 0.000
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/LSFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/fsm_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/led_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/sevenSegDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2458] undeclared symbol w_LFSR_Done, assumed default net type wire [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:122]
+WARNING: [VRFC 10-159] /* in comment [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:149]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xelab -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_game(NUM_BITS=8)
+Compiling module xil_defaultlib.LFSR
+Compiling module xil_defaultlib.led_decoder
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sevenSegDisplay
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.398 ; gain = 0.000
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/LSFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/fsm_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/led_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/sevenSegDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2458] undeclared symbol w_LFSR_Done, assumed default net type wire [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:122]
+WARNING: [VRFC 10-159] /* in comment [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:149]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xelab -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_game(NUM_BITS=8)
+Compiling module xil_defaultlib.LFSR
+Compiling module xil_defaultlib.led_decoder
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sevenSegDisplay
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1029.398 ; gain = 0.000
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/LSFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/fsm_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/led_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/sevenSegDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2458] undeclared symbol w_LFSR_Done, assumed default net type wire [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:122]
+WARNING: [VRFC 10-159] /* in comment [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:149]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xelab -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_game(NUM_BITS=8)
+Compiling module xil_defaultlib.LFSR
+Compiling module xil_defaultlib.led_decoder
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sevenSegDisplay
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1029.398 ; gain = 0.000
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/LSFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/fsm_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/led_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/sevenSegDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2458] undeclared symbol w_LFSR_Done, assumed default net type wire [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:122]
+WARNING: [VRFC 10-159] /* in comment [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:149]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xelab -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_game(NUM_BITS=8)
+Compiling module xil_defaultlib.LFSR
+Compiling module xil_defaultlib.led_decoder
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sevenSegDisplay
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.398 ; gain = 0.000
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/LSFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/fsm_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/led_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/sevenSegDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2458] undeclared symbol w_LFSR_Done, assumed default net type wire [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:122]
+WARNING: [VRFC 10-159] /* in comment [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:149]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xelab -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_game(NUM_BITS=8)
+Compiling module xil_defaultlib.LFSR
+Compiling module xil_defaultlib.led_decoder
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sevenSegDisplay
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.398 ; gain = 0.000
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs synth_1 -jobs 4
+[Wed Apr 21 21:41:56 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Apr 21 21:43:11 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 13 2020-18:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1029.398 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B04057A
+set_property PROGRAM.FILE {C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Apr 21 21:53:42 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/synth_1/runme.log
+[Wed Apr 21 21:53:42 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/impl_1/Top.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : c2   Memory Type : 20   Memory Capacity : 16   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 2279.473 ; gain = 0.000
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B04057A
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Apr 21 22:47:38 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Apr 21 22:48:23 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Apr 21 22:49:29 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 13 2020-18:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2280.082 ; gain = 0.000
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B04057A
+set_property PROGRAM.FILE {C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {mx25l3233f-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B04057A
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/LSFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/fsm_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/led_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/sevenSegDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2458] undeclared symbol w_LFSR_Done, assumed default net type wire [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:122]
+WARNING: [VRFC 10-159] /* in comment [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:149]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xelab -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'btnR' on this module [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v:46]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_hw_manager
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/LSFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/fsm_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/led_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/sevenSegDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2458] undeclared symbol w_LFSR_Done, assumed default net type wire [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:122]
+WARNING: [VRFC 10-159] /* in comment [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:149]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xelab -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'btnR' on this module [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v:46]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Apr 22 00:16:23 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/synth_1
+
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/LSFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/fsm_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/led_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/sevenSegDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2458] undeclared symbol w_LFSR_Done, assumed default net type wire [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:122]
+WARNING: [VRFC 10-159] /* in comment [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:149]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xelab -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_game(NUM_BITS=8)
+Compiling module xil_defaultlib.LFSR
+Compiling module xil_defaultlib.led_decoder
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sevenSegDisplay
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2295.855 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_top/inst11/inst4/LSFR_random_in}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_top/inst11/inst4/state}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/tb_top/inst11/inst4/user_lost}} {{/tb_top/inst11/inst4/user_won}} {{/tb_top/inst11/inst4/round_finished}} {{/tb_top/inst11/inst4/timer_counter}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/LSFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/fsm_game.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_game
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/led_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/sevenSegDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2458] undeclared symbol w_LFSR_Done, assumed default net type wire [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:122]
+WARNING: [VRFC 10-159] /* in comment [C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sources_1/new/stim.v:149]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.sim/sim_1/behav/xsim'
+"xelab -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 39dcb105e1524991bfffa60ae756ad84 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_game(NUM_BITS=8)
+Compiling module xil_defaultlib.LFSR
+Compiling module xil_defaultlib.led_decoder
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.sevenSegDisplay
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2296.070 ; gain = 0.000
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+run 14 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Apr 22 00:59:39 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/synth_1/runme.log
+[Thu Apr 22 00:59:39 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Carranza/Documents/Verilog_Projects/COMPE470L_SimonSays_April/COMPE470L_SimonSays_April.runs/impl_1/runme.log
+archive_project {G:/My Drive/1_ABRAHAM/1_YEAR_3/Spring 2021/COMPE 470L/Final_project/COMPE470L_SimonSays_April.xpr.zip} -temp_dir C:/Users/Carranza/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-872-DESKTOP-2NIFRNL -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Carranza/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-872-DESKTOP-2NIFRNL' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/Carranza/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-872-DESKTOP-2NIFRNL/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
